@@ -8,12 +8,3 @@ print("Welcome to Swift")
  * The use of **Quick Look**
  * Placing results **in-line** with the code
 */
-
-var x = 10
-
-for i in 1...20 {
-    let y = i * x
-    x -= 1
-    print(y)
-}
-

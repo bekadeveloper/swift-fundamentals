@@ -1,5 +1,5 @@
 import SwiftUI
-
+import UIKit
 //:# Optionals
 var index: Int?
 
@@ -15,14 +15,12 @@ if index != nil {
     // index variable has no value assigned to it
     print("index does not contain a value")
 }
-
 //: optinal binding:
 if let index = index {
     print(treeArray[index])
 } else {
     print("index does not contain a value")
 }
-
 //: unwrapping multiple optionals:
 var pet1, pet2: String?
 
@@ -35,9 +33,8 @@ if let firstPet = pet1, let secondPet = pet2 {
 } else {
     print("insufficient pets")
 }
-
 //: implicitly unwrapped optionals:
-var index2: Int!
+var index2: Int! // optional is now implicitly unwrapped
 
 index2 = 2
 
@@ -46,3 +43,7 @@ if index2 != nil {
 } else {
     print("index does not contain a value")
 }
+//: # Type Casting and Type Checking
+let myButton: UIButton = UIButton()
+let myControl = myButton as UIControl
+

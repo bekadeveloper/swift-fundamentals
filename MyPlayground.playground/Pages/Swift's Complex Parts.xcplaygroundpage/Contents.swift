@@ -44,6 +44,14 @@ if index2 != nil {
     print("index does not contain a value")
 }
 //: # Type Casting and Type Checking
+//: upcasting:
 let myButton: UIButton = UIButton()
 let myControl = myButton as UIControl
+//: downcasting:
+let myScrollView: UIScrollView = UIScrollView()
 
+if let myTextView = myScrollView as? UITextView {
+    print("Type cast to UITextView succeeded")
+} else {
+    print("Type cast to UITextView failed")
+}

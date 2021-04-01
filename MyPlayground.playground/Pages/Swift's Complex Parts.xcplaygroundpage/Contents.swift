@@ -110,3 +110,30 @@ func decideFunc(_ feet: Bool) -> (Float) -> Float {
     return feet ? toFeet : toYards
 }
 decideFunc(false)
+//: closures:
+let sayHello = { print("Hello") }
+sayHello()
+
+let multiply = { (_ value1: Int, _ value2: Int) -> Int in
+    return value1 * value2
+}
+multiply(10, 98)
+
+
+let join = { (_ str1: String, _ str2: String) -> String in str1 + str2 }
+join("Hello", "Swift")
+let join2: (String, String) -> String = { $0 + $1 }
+join2("Hello", "SwiftUI")
+
+
+func function1() -> () -> Int {
+    var number = 0
+    
+    func function2() -> Int {
+        return number + 10
+    }
+    
+    return function2
+}
+let myClosure = function1()
+myClosure()

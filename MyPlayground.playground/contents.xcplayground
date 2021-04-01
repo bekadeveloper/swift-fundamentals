@@ -3,6 +3,6 @@
     <pages>
         <page name='Welcoming Page'/>
         <page name='SwiftUI Example'/>
-        <page name='Swift Syntax'/>
+        <page name='Swift&apos;s Complex Parts'/>
     </pages>
 </playground>

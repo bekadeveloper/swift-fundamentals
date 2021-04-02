@@ -167,7 +167,7 @@ class BankAccount {
     }
 }
 var account1 = BankAccount(number: 45678987, balance: 75_500.00)
+print(BankAccount.getMaxBalance())
 account1.displayBalance()
 account1.balanceLessFees = 12_900.00
 account1.accountBalance
-print(BankAccount.getMaxBalance())

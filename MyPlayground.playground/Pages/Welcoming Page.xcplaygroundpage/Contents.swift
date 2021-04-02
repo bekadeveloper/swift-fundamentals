@@ -1,7 +1,4 @@
 import UIKit
-
-print("Welcome to Swift")
-
 /*:
  # Welcome to Playgrounds
  This is your *first* playground which is intended to demonstrate:

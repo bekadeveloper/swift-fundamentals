@@ -127,7 +127,7 @@ join2("Hello", "SwiftUI")
 
 
 func function1() -> () -> Int {
-    var number = 0
+    let number = 0
     
     func function2() -> Int {
         return number + 10
@@ -137,3 +137,37 @@ func function1() -> () -> Int {
 }
 let myClosure = function1()
 myClosure()
+//: # Basics of OOP
+class BankAccount {
+    var accountNumber: Int
+    var accountBalance: Float
+    var fees: Float = 75.00
+    
+    var balanceLessFees: Float {
+        get {
+            return accountBalance - fees
+        }
+        set(newBalance) {
+            accountBalance = newBalance - fees
+        }
+    }
+    
+    init(number: Int, balance: Float) {
+        accountNumber = number
+        accountBalance = balance
+    }
+    
+    func displayBalance() {
+        print("Number: \(accountNumber)")
+        print("Current balance is \(accountBalance)")
+    }
+    
+    class func getMaxBalance() -> Float {
+        return 100_000.00
+    }
+}
+var account1 = BankAccount(number: 45678987, balance: 75_500.00)
+account1.displayBalance()
+account1.balanceLessFees = 12_900.00
+account1.accountBalance
+print(BankAccount.getMaxBalance())

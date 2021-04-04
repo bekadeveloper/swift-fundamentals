@@ -171,3 +171,20 @@ print(BankAccount.getMaxBalance())
 account1.displayBalance()
 account1.balanceLessFees = 12_900.00
 account1.accountBalance
+account1.displayBalance()
+//: protocols:
+protocol MessageBuilder {
+    var name: String { get }
+    
+    func buildMessage() -> String
+}
+class MyClass: MessageBuilder {
+    var name: String
+    
+    init(name: String) {
+        self.name = name
+    }
+    func buildMessage() -> String {
+        return "Hello, \(name)"
+    }
+}

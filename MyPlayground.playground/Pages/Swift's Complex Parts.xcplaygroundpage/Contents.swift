@@ -172,6 +172,7 @@ account1.displayBalance()
 account1.balanceLessFees = 12_900.00
 account1.accountBalance
 account1.displayBalance()
+print("\n\n\n")
 //: protocols:
 protocol MessageBuilder {
     var name: String { get }
@@ -187,4 +188,11 @@ class MyClass: MessageBuilder {
     func buildMessage() -> String {
         return "Hello, \(name)"
     }
+}
+//: opaque return types:
+func doubleFunc1(value: Int) -> some Equatable {
+    return value * 2
+}
+func doubleFunc2(value: String) -> some Equatable {
+    return value + value
 }

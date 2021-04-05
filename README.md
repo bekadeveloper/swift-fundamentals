@@ -1,3 +1,3 @@
 # Swift Fundamentals and SwiftUI Demos
-<img align="left" src="https://user-images.githubusercontent.com/63741198/113543572-1451be80-9600-11eb-83e7-0cc646a1f48a.png" width=200 height=120>
-<img src="https://user-images.githubusercontent.com/63741198/113543601-23d10780-9600-11eb-9995-22b719a6ef7a.png" width=200 height=100>
+<img align="left" src="https://user-images.githubusercontent.com/63741198/113575362-2c910000-9637-11eb-8be9-c850e8f1257a.png" width=350 height=100>
+<img src="https://user-images.githubusercontent.com/63741198/113575400-3b77b280-9637-11eb-8ec8-dd991e209440.png" width=400 height=100>

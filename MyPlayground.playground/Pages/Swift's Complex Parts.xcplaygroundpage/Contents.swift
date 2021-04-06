@@ -232,3 +232,59 @@ extension Double {
 let number1: Double = 3.0
 print(number1.squared)
 print(2.0.cubed)
+print("\n")
+//: # Structures and Enumerations
+//: structures:
+struct SampleStruct {
+    var name: String
+    
+    init(name: String) {
+        self.name = name
+    }
+    
+    func buildHelloMsg() -> String {
+        return "Hello \(name)"
+    }
+}
+let myStruct1 = SampleStruct(name: "Tim")
+var myStruct2 = myStruct1
+myStruct2.name = "Phill"
+print(myStruct1.name)
+print(myStruct2.name)
+
+class SampleClass {
+    var name: String
+    
+    init(name: String) {
+        self.name = name
+    }
+    
+    func buildHelloMsg() -> String {
+        return "Hello \(name)"
+    }
+}
+let myClass1 = SampleClass(name: "Ive")
+var myClass2 = myClass1
+myClass2.name = "Craig"
+print(myClass1.name)
+print(myClass2.name)
+//: enumerations:
+enum Temperature {
+    case cold(centigrades: Int)
+    case warm
+    case hot
+}
+
+func displayTempInfo(temp: Temperature) {
+    switch temp {
+        case .cold(let centigrades) where centigrades <= 0:
+            print("Ice warning: \(centigrades) degrees")
+        case .cold:
+            print("It is cold but not freezing")
+        case .warm:
+            print("It is warm")
+        case .hot:
+            print("It is hot")
+    }
+}
+displayTempInfo(temp: Temperature.cold(centigrades: -12))

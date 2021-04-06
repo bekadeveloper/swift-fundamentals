@@ -196,3 +196,39 @@ func doubleFunc1(value: Int) -> some Equatable {
 func doubleFunc2(value: String) -> some Equatable {
     return value + value
 }
+//: # Subclasses and Extensions
+//: subclasses:
+class SavingsAccount: BankAccount {
+    var interestRate: Float
+    
+    init(number: Int, balance: Float, rate: Float) {
+        interestRate = rate
+        super.init(number: number, balance: balance)
+    }
+    
+    override func displayBalance() {
+        super.displayBalance()
+        print("Prevailing interest rate is \(interestRate)")
+    }
+    
+    func calculateInterest() -> Float {
+        return accountBalance * interestRate
+    }
+}
+let savings1 = SavingsAccount(number: 12345, balance: 975_000, rate: 0.05)
+savings1.displayBalance()
+print(savings1.calculateInterest())
+print("\n")
+//: extensions:
+extension Double {
+    var squared: Double {
+        return self * self
+    }
+    
+    var cubed: Double {
+        return self * self * self
+    }
+}
+let number1: Double = 3.0
+print(number1.squared)
+print(2.0.cubed)

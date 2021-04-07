@@ -1,5 +1,6 @@
 import SwiftUI
 import UIKit
+import Foundation
 //:# Optionals
 var index: Int?
 
@@ -287,4 +288,72 @@ func displayTempInfo(temp: Temperature) {
             print("It is hot")
     }
 }
-displayTempInfo(temp: Temperature.cold(centigrades: -12))
+var enum1 = Temperature.cold(centigrades: -12)
+displayTempInfo(temp: enum1)
+print("\n")
+//: # Property Wrappers
+@propertyWrapper
+struct FixCase {
+    private var value: String = ""
+    
+    var wrappedValue: String {
+        get { value }
+        set { value = newValue.uppercased() }
+    }
+    
+    init(wrappedValue: String) {
+        self.wrappedValue = wrappedValue
+    }
+}
+struct Contact {
+    @FixCase var name: String
+    @FixCase var city: String
+    @FixCase var country: String
+}
+var contact = Contact(name: "Steve", city: "San Francisco", country: "United States")
+print("\(contact.name), \(contact.city), \(contact.country)")
+
+@propertyWrapper
+struct MinMaxVal<V: Comparable> {
+    var value: V
+    let max: V
+    let min: V
+    
+    var wrappedValue: V {
+        get { value }
+        set {
+            if newValue > max {
+                value = max
+            } else if newValue < min {
+                value = min
+            } else {
+                value = newValue
+            }
+        }
+    }
+    
+    init(wrappedValue: V, min: V, max: V) {
+        value = wrappedValue
+        self.max = max
+        self.min = min
+    }
+}
+struct Demo {
+    @MinMaxVal(min: 50, max: 200) var value: Int = 0
+}
+struct Demo2 {
+    @MinMaxVal(min: "A", max: "F") var value: String = ""
+}
+struct Demo3 {
+    @MinMaxVal(min: Date(), max: Calendar.current.date(byAdding: .month, value: 1, to: Date())!) var value: Date = Date()
+}
+var demo = Demo()
+var demo2 = Demo2()
+var demo3 = Demo3()
+demo.value = 40
+demo2.value = "F"
+demo3.value = Calendar.current.date(byAdding: .day, value: 5, to: Date())!
+print(demo.value)
+print(demo2.value)
+print(demo3.value)
+print("\n")

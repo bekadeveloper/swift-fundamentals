@@ -357,3 +357,37 @@ print(demo.value)
 print(demo2.value)
 print(demo3.value)
 print("\n")
+//: # Arrays and Dictionaries
+//: arrays:
+var myArray: [String] = [String]()
+myArray = ["Pine", "Oak", "Yew"]
+myArray[1] = "Redwood"
+print(myArray.shuffled())
+print(myArray.randomElement()!)
+myArray.append("Oak")
+myArray += ["Maple", "Birch"]
+print(myArray)
+myArray.remove(at: 4)
+myArray.insert("Maple", at: 0)
+print(myArray)
+
+//for tree in myArray {
+//    print(tree)
+//}
+myArray.forEach { tree in
+    print(tree)
+}
+var mixedArray: [Any] = ["A string", 12, 90.34, true]
+//: dictionaries:
+let keys = ["100-432112", "200-532874", "202-546549", "104-109834"]
+let values = ["Wind in the Willows", "Tale of Two Cities", "Sense and Sensibility", "Shutter Island"]
+
+var bookDict: [String: String] = Dictionary(uniqueKeysWithValues: zip(keys, values))
+
+bookDict.updateValue("The Ruins", forKey: "200-532874")
+bookDict["300-898871"] = "The Overlook"
+bookDict.removeValue(forKey: "202-546549")
+
+for (isbn, title) in bookDict {
+    print("ISBN: \(isbn) Title: \(title)")
+}

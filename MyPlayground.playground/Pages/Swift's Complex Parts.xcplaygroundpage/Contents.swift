@@ -391,3 +391,47 @@ bookDict.removeValue(forKey: "202-546549")
 for (isbn, title) in bookDict {
     print("ISBN: \(isbn) Title: \(title)")
 }
+//: # Error Handling
+enum FileTransferError: Error {
+    case noConnection
+    case lowBandwidth
+    case fileNotFound
+}
+
+let connectionOK = true
+let connectionSpeed = 30.0
+let fileFound = false
+
+func fileTransfer() throws {
+    
+    guard connectionOK else {
+        throw FileTransferError.noConnection
+    }
+    
+    guard connectionSpeed >= 30 else {
+        throw FileTransferError.lowBandwidth
+    }
+    
+    guard fileFound else {
+        throw FileTransferError.fileNotFound
+    }
+}
+
+func sendFile() -> String {
+    
+    do {
+        try fileTransfer()
+    } catch FileTransferError.noConnection {
+        return "No network connection"
+    } catch FileTransferError.lowBandwidth {
+        return "File transfer speed too low"
+    } catch FileTransferError.fileNotFound {
+        return "File not found"
+    } catch {
+        return "Unknown error"
+    }
+    
+    return "Successfull transfer"
+}
+
+sendFile()

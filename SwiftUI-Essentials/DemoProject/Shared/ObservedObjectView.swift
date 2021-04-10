@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ObservedObjectView: View {
-    @ObservedObject var demoData: DemoData = DemoData()
+    @StateObject var demoData: DemoData = DemoData()
     
     var body: some View {
         VStack(alignment: .leading, spacing: 15) {

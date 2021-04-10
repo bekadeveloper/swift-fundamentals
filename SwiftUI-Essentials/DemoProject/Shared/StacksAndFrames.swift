@@ -73,6 +73,6 @@ struct StacksAndFrames: View {
 struct StacksAndFrames_Previews: PreviewProvider {
     static var previews: some View {
         StacksAndFrames()
-            .preferredColorScheme(.light)
+            .preferredColorScheme(.dark)
     }
 }

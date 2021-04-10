@@ -9,6 +9,7 @@ struct ContentView: View {
     
     var body: some View {
         VStack(alignment: .center) {
+    
             Image(systemName: "swift")
                 .resizable()
                 .frame(width: 150, height: 130)

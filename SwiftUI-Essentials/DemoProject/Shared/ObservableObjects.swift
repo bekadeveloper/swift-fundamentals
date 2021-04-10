@@ -20,3 +20,7 @@ class DemoData: ObservableObject {
         
     }
 }
+
+class SpeedSetting: ObservableObject {
+    @Published var speed = 25.0
+}

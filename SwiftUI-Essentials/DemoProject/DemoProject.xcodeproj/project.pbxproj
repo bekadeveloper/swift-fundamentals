@@ -15,6 +15,10 @@
 		E946CBDA2621614600745EAC /* StacksAndFrames.swift in Sources */ = {isa = PBXBuildFile; fileRef = E946CBD82621614600745EAC /* StacksAndFrames.swift */; };
 		E95271452621C1F000FE6F3B /* StateProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95271442621C1F000FE6F3B /* StateProperties.swift */; };
 		E95271462621C1F000FE6F3B /* StateProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95271442621C1F000FE6F3B /* StateProperties.swift */; };
+		E952714C2622080800FE6F3B /* ObservableObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = E952714B2622080800FE6F3B /* ObservableObjects.swift */; };
+		E952714D2622080800FE6F3B /* ObservableObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = E952714B2622080800FE6F3B /* ObservableObjects.swift */; };
+		E952715126220B8600FE6F3B /* ObservedObjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E952715026220B8600FE6F3B /* ObservedObjectView.swift */; };
+		E952715226220B8600FE6F3B /* ObservedObjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E952715026220B8600FE6F3B /* ObservedObjectView.swift */; };
 		E9B23D1D26201E550084D305 /* DemoProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B23D0A26201E550084D305 /* DemoProjectApp.swift */; };
 		E9B23D1E26201E550084D305 /* DemoProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B23D0A26201E550084D305 /* DemoProjectApp.swift */; };
 		E9B23D1F26201E550084D305 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B23D0B26201E550084D305 /* ContentView.swift */; };
@@ -28,6 +32,8 @@
 		E910C51E2620926100714E44 /* ContainerViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViews.swift; sourceTree = "<group>"; };
 		E946CBD82621614600745EAC /* StacksAndFrames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StacksAndFrames.swift; sourceTree = "<group>"; };
 		E95271442621C1F000FE6F3B /* StateProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateProperties.swift; sourceTree = "<group>"; };
+		E952714B2622080800FE6F3B /* ObservableObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableObjects.swift; sourceTree = "<group>"; };
+		E952715026220B8600FE6F3B /* ObservedObjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservedObjectView.swift; sourceTree = "<group>"; };
 		E9B23D0A26201E550084D305 /* DemoProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoProjectApp.swift; sourceTree = "<group>"; };
 		E9B23D0B26201E550084D305 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E9B23D0C26201E550084D305 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -75,6 +81,8 @@
 				E910C51E2620926100714E44 /* ContainerViews.swift */,
 				E910C5192620836700714E44 /* ViewModifiers.swift */,
 				E95271442621C1F000FE6F3B /* StateProperties.swift */,
+				E952714B2622080800FE6F3B /* ObservableObjects.swift */,
+				E952715026220B8600FE6F3B /* ObservedObjectView.swift */,
 				E9B23D0C26201E550084D305 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -208,7 +216,9 @@
 				E910C51A2620836700714E44 /* ViewModifiers.swift in Sources */,
 				E9B23D1F26201E550084D305 /* ContentView.swift in Sources */,
 				E9B23D1D26201E550084D305 /* DemoProjectApp.swift in Sources */,
+				E952714C2622080800FE6F3B /* ObservableObjects.swift in Sources */,
 				E95271452621C1F000FE6F3B /* StateProperties.swift in Sources */,
+				E952715126220B8600FE6F3B /* ObservedObjectView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,7 +231,9 @@
 				E910C51B2620836700714E44 /* ViewModifiers.swift in Sources */,
 				E9B23D2026201E550084D305 /* ContentView.swift in Sources */,
 				E9B23D1E26201E550084D305 /* DemoProjectApp.swift in Sources */,
+				E952714D2622080800FE6F3B /* ObservableObjects.swift in Sources */,
 				E95271462621C1F000FE6F3B /* StateProperties.swift in Sources */,
+				E952715226220B8600FE6F3B /* ObservedObjectView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

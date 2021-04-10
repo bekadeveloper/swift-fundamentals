@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct StateProperties: View {
+struct StatePropertiesExample: View {
     @State private var wifiEnabled = false
     @State private var userName = ""
     
@@ -42,7 +42,7 @@ struct WifiIcon: View {
 
 struct Bindings_Previews: PreviewProvider {
     static var previews: some View {
-        StateProperties()
+        StatePropertiesExample()
             .preferredColorScheme(.dark)
     }
 }

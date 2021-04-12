@@ -25,6 +25,8 @@ struct ContentView: View {
             
             Spacer()
             
+            Divider()
+            
             TextField("Enter text here", text: $text)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
             

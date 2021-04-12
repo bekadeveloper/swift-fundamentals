@@ -13,6 +13,10 @@
 		E971941326240EB600AB245E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E97193FE26240EB500AB245E /* ContentView.swift */; };
 		E971941426240EB600AB245E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E97193FF26240EB600AB245E /* Assets.xcassets */; };
 		E971941526240EB600AB245E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E97193FF26240EB600AB245E /* Assets.xcassets */; };
+		E9719421262411D700AB245E /* FirstTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9719420262411D700AB245E /* FirstTabView.swift */; };
+		E9719422262411D700AB245E /* FirstTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9719420262411D700AB245E /* FirstTabView.swift */; };
+		E9719426262411F200AB245E /* SecondTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9719425262411F200AB245E /* SecondTabView.swift */; };
+		E9719427262411F200AB245E /* SecondTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9719425262411F200AB245E /* SecondTabView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,8 @@
 		E971940C26240EB600AB245E /* LifecycleDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LifecycleDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E971940E26240EB600AB245E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E971940F26240EB600AB245E /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		E9719420262411D700AB245E /* FirstTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTabView.swift; sourceTree = "<group>"; };
+		E9719425262411F200AB245E /* SecondTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +65,8 @@
 			children = (
 				E97193FD26240EB500AB245E /* LifecycleDemoApp.swift */,
 				E97193FE26240EB500AB245E /* ContentView.swift */,
+				E9719425262411F200AB245E /* SecondTabView.swift */,
+				E9719420262411D700AB245E /* FirstTabView.swift */,
 				E97193FF26240EB600AB245E /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -187,7 +195,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9719426262411F200AB245E /* SecondTabView.swift in Sources */,
 				E971941226240EB600AB245E /* ContentView.swift in Sources */,
+				E9719421262411D700AB245E /* FirstTabView.swift in Sources */,
 				E971941026240EB600AB245E /* LifecycleDemoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -196,7 +206,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9719427262411F200AB245E /* SecondTabView.swift in Sources */,
 				E971941326240EB600AB245E /* ContentView.swift in Sources */,
+				E9719422262411D700AB245E /* FirstTabView.swift in Sources */,
 				E971941126240EB600AB245E /* LifecycleDemoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

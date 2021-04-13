@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct ObservableDemoApp: App {
+    let timerData = TimerData()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(timerData)
         }
     }
 }

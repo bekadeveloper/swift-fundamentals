@@ -435,11 +435,3 @@ func sendFile() -> String {
 }
 
 sendFile()
-
-for i in 1...10 {
-    if(i % 3 == 0 && i % 5 == 0) {
-        print(i)
-    } else {
-        print("lol")
-    }
-}

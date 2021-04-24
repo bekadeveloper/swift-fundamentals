@@ -11,7 +11,7 @@ import CoreImage.CIFilterBuiltins
 
 struct ContentView: View {
     @Binding var document: ImageDocDemoDocument
-    @State var ciFilter = CIFilter.sepiaTone()
+    @State var ciFilter = CIFilter.colorMonochrome()
     
     let context = CIContext()
 

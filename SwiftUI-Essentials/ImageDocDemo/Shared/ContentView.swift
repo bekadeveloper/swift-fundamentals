@@ -23,7 +23,7 @@ struct ContentView: View {
                 .cornerRadius(7.0)
                 .padding()
             
-            Button(action: {} ) {
+            Button(action: { filterImage() } ) {
                 Text("Filter")
             }
             .padding()
